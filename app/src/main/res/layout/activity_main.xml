@@ -68,29 +68,142 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
 
-                    <Button
+                    <!-- Badge 1: Organic -->
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Organic" />
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="12dp">
 
-                    <Button
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/badge_circle_ring"
+                            android:padding="10dp"
+                            android:src="@drawable/organic"
+                            android:contentDescription="Organic"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Organic"
+                            android:textSize="12sp"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <!-- Badge 2: Seasonal -->
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seasonal" />
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="12dp">
 
-                    <Button
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/badge_circle_ring"
+                            android:padding="10dp"
+                            android:src="@drawable/strawberry"
+                            android:contentDescription="Seasonal"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Seasonal"
+                            android:textSize="12sp"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <!-- Badge 3: Fresh -->
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Fresh" />
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="12dp">
 
-                    <Button
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/badge_circle_ring"
+                            android:padding="10dp"
+                            android:src="@drawable/cabbage"
+                            android:contentDescription="Fresh"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Fresh"
+                            android:textSize="12sp"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <!-- Badge 4: Vegan -->
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Vegan" />
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="12dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/badge_circle_ring"
+                            android:padding="10dp"
+                            android:src="@drawable/avocadoes"
+                            android:contentDescription="Vegan"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Vegan"
+                            android:textSize="12sp"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="12dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/badge_circle_ring"
+                            android:padding="10dp"
+                            android:src="@drawable/carrot"
+                            android:contentDescription="Vegan"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="other"
+                            android:textSize="12sp"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </HorizontalScrollView>
+
 
             <!-- Banner -->
             <ImageView
